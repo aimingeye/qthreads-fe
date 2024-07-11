@@ -1,47 +1,49 @@
+// src/components/RegistrationForm.tsx
+"use client";
+
 import React, { useState } from "react";
+import Input from "./Input";
 
-interface RegistrationFormProps {
-  onSubmit: (data: {
-    email: string;
-    password: string;
-    username: string;
-  }) => void;
-}
-
-const RegistrationForm: React.FC<RegistrationFormProps> = ({ onSubmit }) => {
+const RegistrationForm: React.FC = () => {
+  const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [username, setUsername] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onSubmit({ email, password, username });
+    // Handle form submission logic
+    console.log({ username, email, password });
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="Email"
-        required
-      />
-      <input
-        type="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        placeholder="Password"
-        required
-      />
-      <input
+      <Input
+        id="username"
+        label="Username"
         type="text"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
-        placeholder="Username"
-        required
       />
-      <button type="submit">Register</button>
+      <Input
+        id="email"
+        label="Email"
+        type="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
+      <Input
+        id="password"
+        label="Password"
+        type="password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <button
+        type="submit"
+        className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition-colors"
+      >
+        Register
+      </button>
     </form>
   );
 };
