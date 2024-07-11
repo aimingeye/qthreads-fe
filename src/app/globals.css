@@ -31,3 +31,12 @@ body {
     text-wrap: balance;
   }
 }
+
+.ascii-art {
+  background-color: inherit;
+  color: black;
+  font-family: monospace;
+  white-space: pre-wrap;
+  margin: 0;
+  padding: 0;
+}

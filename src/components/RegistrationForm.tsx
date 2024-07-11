@@ -1,50 +1,38 @@
 // src/components/RegistrationForm.tsx
-"use client";
 
-import React, { useState } from "react";
-import Input from "./Input";
+import React from "react";
+import styles from "./RegistrationForm.module.css"; // Import CSS module
 
-const RegistrationForm: React.FC = () => {
-  const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+interface RegistrationFormProps {
+  onSubmit: (data: any) => void;
+}
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission logic
-    console.log({ username, email, password });
+const RegistrationForm: React.FC<RegistrationFormProps> = ({ onSubmit }) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    // Handle form submission
+    onSubmit({}); // Replace with actual form data
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <Input
-        id="username"
-        label="Username"
-        type="text"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-      />
-      <Input
-        id="email"
-        label="Email"
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <Input
-        id="password"
-        label="Password"
-        type="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <button
-        type="submit"
-        className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition-colors"
-      >
-        Register
-      </button>
-    </form>
+    <div className={styles.formContainer}>
+      <form className={styles.form} onSubmit={handleSubmit}>
+        <h2>Register</h2>
+        <input type="text" placeholder="Username" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button type="submit" className={styles.registerButton}>
+          Register
+        </button>
+      </form>
+      <div className={styles.oauthContainer}>
+        <p>Or register with:</p>
+        <div className={styles.oauthButtons}>
+          <button className={styles.googleButton}>Google</button>
+          <button className={styles.githubButton}>GitHub</button>
+        </div>
+      </div>
+    </div>
   );
 };
 

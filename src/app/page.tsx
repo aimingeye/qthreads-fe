@@ -1,17 +1,25 @@
 // src/app/page.tsx
-"use client";
+
+"use client"; // Add this line to mark the component as a client component
 
 import React from "react";
-import Layout from "@/components/Layout";
-import Header from "@/components/Header";
 import RegistrationForm from "@/components/RegistrationForm";
+import AsciiArt from "@/components/AsciiArt";
+import styles from "./page.module.css"; // Import CSS module for page styles
 
 const Home: React.FC = () => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    console.log(`yay`);
+  };
   return (
-    <Layout>
-      <Header />
-      <RegistrationForm />
-    </Layout>
+    <div className={styles.container}>
+      <div className={styles.asciiArt}>
+        <AsciiArt />
+      </div>
+      <div className={styles.registrationForm}>
+        <RegistrationForm onSubmit={handleSubmit} />
+      </div>
+    </div>
   );
 };
 
