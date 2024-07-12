@@ -24,14 +24,14 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({ onSubmit }) => {
         <button type="submit" className={styles.registerButton}>
           Register
         </button>
-      </form>
-      <div className={styles.oauthContainer}>
-        <p>Or register with:</p>
-        <div className={styles.oauthButtons}>
-          <button className={styles.googleButton}>Google</button>
-          <button className={styles.githubButton}>GitHub</button>
+        <div className={styles.oauthContainer}>
+          <p>Or register with:</p>
+          <div className={styles.oauthButtons}>
+            <button className={styles.googleButton}>Google</button>
+            <button className={styles.githubButton}>GitHub</button>
+          </div>
         </div>
-      </div>
+      </form>
     </div>
   );
 };
