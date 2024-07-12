@@ -8,7 +8,6 @@ const AsciiArt = () => {
   return (
     <div
       style={{
-        backgroundColor: "ivory",
         height: "100vh",
         display: "flex",
         alignItems: "center",
