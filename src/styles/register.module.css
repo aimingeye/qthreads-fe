@@ -3,7 +3,7 @@
 .container {
   display: flex;
   height: 100vh;
-  background: linear-gradient(to right, rgb(251, 255, 0), rgb(0, 0, 0));
+  background: linear-gradient(to right, rgb(251, 255, 0), rgb(0, 255, 204));
 }
 
 .asciiArt {
@@ -18,7 +18,7 @@
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; /* Example background color for the form area */
   padding: 20px;
   border-radius: 8px;
 }

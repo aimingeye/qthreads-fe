@@ -27,8 +27,12 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({ onSubmit }) => {
         <div className={styles.oauthContainer}>
           <p>Or register with:</p>
           <div className={styles.oauthButtons}>
-            <button className={styles.googleButton}>Google</button>
-            <button className={styles.githubButton}>GitHub</button>
+            <button className={styles.googleButton}>
+              <img src="/images/google-logo.png" alt="Google" />
+            </button>
+            <button className={styles.githubButton}>
+              <img src="/images/github-mark.png" alt="Github" />
+            </button>
           </div>
         </div>
       </form>
