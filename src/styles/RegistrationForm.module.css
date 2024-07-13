@@ -66,54 +66,103 @@
   justify-content: center;
 }
 
-.googleButton {
-  background-color: rgba(255, 255, 255, 0.5);
+/* .googleButton {
+  background: rgba(255, 255, 255, 0.5);
   color: white;
-  /* border-color: black;
-  border-width: 2px;  */
   padding: 10px;
-  border-radius: 50%; /* Make the button circular */
+  border-radius: 50%; 
   cursor: pointer;
   font-size: 16px;
-  width: 50px; /* Set the width of the button */
-  height: 50px; /* Set the height of the button */
+  width: 50px;
+  height: 50px; 
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 30px;
   margin-top: 10px;
   transition: background-color 0.3s ease;
-}
-.googleButton img {
+} */
+
+/* .googleButton img {
   scale: 180%;
-}
+} */
 
-.googleButton:hover {
+/* .googleButton:hover {
   background-color: #fff;
-}
+} */
 
-.githubButton {
+/* .githubButton {
   background-color: transparent;
   color: white;
-  /* border-color: black;
-  border-width: 2px; */
   padding: 10px;
-  border-radius: 50%; /* Make the button circular */
+  border-radius: 50%;
   cursor: pointer;
   font-size: 16px;
-  width: 50px; /* Set the width of the button */
-  height: 50px; /* Set the height of the button */
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 30px;
   margin-top: 10px;
   transition: background-color 0.3s ease;
-}
-.githubButton img {
+} */
+
+/* .githubButton img {
   scale: 190%;
+} */
+
+/* .githubButton:hover {
+  background-color: white;
+} */
+/* .googleButton {
+  background-image: url(/images/google-logo.png);
+}
+.githubButton {
+  background-image: url(/images/github-mark.png);
+} */
+
+.googleButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
 }
 
+.githubButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.googleButton:hover,
 .githubButton:hover {
   background-color: white;
+}
+
+.googleButton {
+  background-image: url("/images/google-logo.png");
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.githubButton {
+  background-image: url("/images/github-mark.png");
+  background-size: 108% 108%;
+  background-position: center;
 }

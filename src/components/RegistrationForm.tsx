@@ -1,7 +1,7 @@
 // src/components/RegistrationForm.tsx
 
 import React from "react";
-import styles from "./RegistrationForm.module.css"; // Import CSS module
+import styles from "../styles/RegistrationForm.module.css"; // Import CSS module
 
 interface RegistrationFormProps {
   onSubmit: (data: any) => void;
@@ -28,10 +28,10 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({ onSubmit }) => {
           <p>Or register with:</p>
           <div className={styles.oauthButtons}>
             <button className={styles.googleButton}>
-              <img src="/images/google-logo.png" alt="Google" />
+              {/* <img src="/images/google-logo.png" alt="Google" /> */}
             </button>
             <button className={styles.githubButton}>
-              <img src="/images/github-mark.png" alt="Github" />
+              {/* <img src="/images/github-mark.png" alt="Github" /> */}
             </button>
           </div>
         </div>

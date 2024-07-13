@@ -1,0 +1,20 @@
+/* components/NavigationButtons.module.css */
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between buttons */
+}
+
+.button {
+  /* Add button styles */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #e0e0e0;
+}
