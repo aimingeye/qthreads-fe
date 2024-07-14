@@ -13,7 +13,8 @@
 
 .form {
   width: 100%;
-  background-color: rgba(255, 255, 0, 0.3);
+  background-color: rgb(255, 221, 0, 0.2);
+  color: black;
   max-width: 400px;
   padding: 20px;
   border-radius: 8px;
@@ -27,13 +28,13 @@
 }
 
 .form h2 {
-  color: white;
+  color: black;
   font-size: 24px;
   margin-bottom: 20px;
 }
 
 .form input {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   margin-bottom: 10px;
   padding: 10px;
   font-size: 16px;
@@ -57,6 +58,7 @@
 }
 
 .oauthContainer {
+  color: black;
   margin-top: 20px;
   text-align: center;
 }
@@ -134,6 +136,7 @@
   align-items: center;
   justify-content: center;
   margin-right: 15px;
+  margin-top: 10px;
 }
 
 .githubButton {
@@ -148,6 +151,7 @@
   align-items: center;
   justify-content: center;
   margin-left: 15px;
+  margin-top: 10px;
 }
 
 .googleButton:hover,

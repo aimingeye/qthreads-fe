@@ -19,12 +19,12 @@ const AsciiArt = () => {
           color: "black",
           whiteSpace: "pre",
           fontFamily: "monospace",
-          fontSize: "2rem",
+          fontSize: "4rem",
         }}
       >
-        <span style={{ color: "blue" }}>Q</span>threads
+        <span style={{ color: "#FFFFFF", fontSize: "12rem" }}>Q</span>threads
         <span
-          style={{ color: "blue", animation: "blink 1s step-end infinite" }}
+          style={{ color: "#0056b3", animation: "blink 1s step-end infinite" }}
         >
           .
         </span>
@@ -36,7 +36,7 @@ const AsciiArt = () => {
             color: transparent;
           }
           50% {
-            color: blue;
+            color: white;
           }
         }
       `}</style>

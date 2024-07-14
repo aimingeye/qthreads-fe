@@ -3,7 +3,7 @@
 .container {
   display: flex;
   height: 100vh;
-  background: linear-gradient(to right, rgb(255, 255, 0), rgb(0, 0, 0));
+  background: linear-gradient(to right, rgb(255, 221, 0), rgb(220, 220, 220));
 }
 
 .asciiArt {
@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px; /* Adjust padding for spacing around ASCII art */
+  padding: 20px;
 }
 
 .registrationForm {
