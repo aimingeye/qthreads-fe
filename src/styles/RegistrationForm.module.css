@@ -1,7 +1,7 @@
 /* src/components/RegistrationForm.module.css */
 
 .formContainer {
-  width: 60%;
+  width: 40%;
   margin: auto;
   display: flex;
   flex-direction: column;
