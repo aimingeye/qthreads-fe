@@ -1,16 +1,20 @@
 // components/NavigationButtons.tsx
 
 import React from "react";
-import styles from "../styles/NavigationButtons.module.css"; // Import CSS module for styling
 
 const NavigationButtons: React.FC = () => {
   return (
-    <div className={styles.buttonContainer}>
-      <button className={styles.button}>Button 1</button>
-      <button className={styles.button}>Button 2</button>
-      <button className={styles.button}>Button 3</button>
-      <button className={styles.button}>Button 4</button>
-      <button className={styles.button}>Button 5</button>
+    <div className="flex flex-col">
+      {["Button 1", "Button 2", "Button 3", "Button 4", "Button 5"].map(
+        (buttonLabel, idx) => (
+          <button
+            key={idx}
+            className="p-3 bg-white rounded-lg shadow-md hover:bg-gray-200"
+          >
+            {buttonLabel}
+          </button>
+        )
+      )}
     </div>
   );
 };

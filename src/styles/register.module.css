@@ -1,9 +1,9 @@
-/* src/app/page.module.css */
+/* src/styles/register.module.css */
 
 .container {
   display: flex;
   height: 100vh;
-  background: linear-gradient(to right, rgb(251, 255, 0), rgb(0, 255, 204));
+  background: linear-gradient(to right, rgb(255, 221, 0), rgb(220, 220, 220));
 }
 
 .asciiArt {
@@ -11,14 +11,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px; /* Adjust padding for spacing around ASCII art */
+  padding: 20px;
 }
 
 .registrationForm {
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: center; /* Example background color for the form area */
+  justify-content: center;
   padding: 20px;
   border-radius: 8px;
 }

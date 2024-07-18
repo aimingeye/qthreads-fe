@@ -3,7 +3,6 @@
 import React from "react";
 import ProfileSection from "./ProfileSection";
 import NavigationButtons from "./NavigationButtons";
-import styles from "../styles/UserDetails.module.css";
 
 interface UserDetailsProps {
   name: string;
@@ -13,11 +12,9 @@ interface UserDetailsProps {
 
 const UserDetails: React.FC<UserDetailsProps> = ({ name, username }) => {
   return (
-    <div className={styles.userDetailsContainer}>
+    <div>
       <ProfileSection name={name} username={username} />
-      <div className={styles.navigationContainer}>
-        <NavigationButtons />
-      </div>
+      <NavigationButtons />
     </div>
   );
 };
